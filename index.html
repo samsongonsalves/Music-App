@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <script src="https://kit.fontawesome.com/6e715f66ba.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <title>𝐑𝐄𝐍𝐄𝐙 - 𝐌𝐚𝐬𝐭𝐞𝐫 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐃𝐫𝐞𝐚𝐦𝐬</title>
+</head>
+<body>
+  <div class="maincontainer">
+    <div class="secondcontainer">
+
+      <!-- Left Side -->
+
+      <div class="left-side">
+        <div class="lefttop">
+          <div class="playlist">
+            <h3><i class="fa-solid fa-music musicicon"></i>Playlist <img class="deleteplay" id="del1" src="./Images/delete.png"></img></h3>
+          </div>
+          <div class="last_listened">
+            <h3><i class="fa-solid fa-music musicicon"></i>Last Listened <img class="deleteplay" id="del2" src="./Images/delete.png"></img></h3>
+          </div>
+          <div class="favourites">
+            <h3><i class="fa-solid fa-music musicicon"></i>Favourites <img class="deleteplay" id="del3" src="./Images/delete.png"></img></h3>
+          </div>
+          <template data-playlist-template>
+            <div class="playlist-card" playlist-card>
+              <img class="playimg" data-playlist-img>
+              <div class="playname" data-playlist-name></div>
+            </div>
+          </template>
+          <div class="containera" data-playlist-container></div>
+        </div>
+        
+        <template data-template>
+          <div class="LeftsongInfo" left-card>
+            <div class="songname" data-name></div>
+          </div>
+        </template>
+        <!-- Lists On Left Hand Side -->
+        <div class="leftlists">
+          <div data-left-container></div>
+          <template data-song-template>
+            <div class="LeftsongInfo" left-card>
+              <img class="songimg" data-song-img>
+              <div class="songname" data-song-name></div>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+
+      <div class="right-side">
+        <nav class="navbar2">
+          <div class="innernav">
+            <div class="d1"><input type="search" data-search></div>
+            <div class="d2"><i class="fa-solid fa-magnifying-glass" mag-search></i></div>
+          </div>
+          <div class="brandname">RENEZ</div>
+        </nav>
+        <div class="rightspace">
+          <div class="right-songs">
+            <div class="visualization">
+            </div>
+            
+            <!-- Trending Songs -->
+
+            <div class="latest-trends">Trending Songs</div>
+            <div class="latest-trends-posters">
+              <div class="latest-trends-box">
+                <img src="./Images/tere sang yaara.jpg" id="lt1">
+                <i class="fa-solid fa-plus plus" id="Tere Sang Yara"></i>
+                </img>
+                <div class="ltds">Tere Sang Yara</div>
+                <div class="ltda">Rustom</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/looteri.jpg" id="lt2">
+                <i class="fa-solid fa-plus plus" id="Looteri"></i>
+                </img>
+                <div class="ltds">Looteri</div>
+                <div class="ltda">Happy Hardy Heer</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/ik vaari aa.jpg" id="lt3">
+                <i class="fa-solid fa-plus plus" id="Ik Vaari Aa"></i>
+                </img>
+                <div class="ltds">Ik Vaari Aa</div>
+                <div class="ltda">Raabta</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/phir kabhi.jpg" id="lt4">
+                <i class="fa-solid fa-plus plus" id="Phir Kabhi"></i>
+                </img>
+                <div class="ltds">Phir Kabhi</div>
+                <div class="ltda">M.S. Dhoni</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/kaun tujhe.jpg" id="lt5">
+                <i class="fa-solid fa-plus plus" id="Kaun Tujhe"></i>
+                </img>
+                <div class="ltds">Kaun Tujhe</div>
+                <div class="ltda">M.S. Dhoni</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/mere bina.jpg" id="lt6">
+                <i class="fa-solid fa-plus plus" id="Mere Bina"></i>
+                </img>
+                <div class="ltds">Mere Bina</div>
+                <div class="ltda">Crook</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/sooraj dooba hain.jpg" id="lt7">
+                <i class="fa-solid fa-plus plus" id="Sooraj Dooba Hain"></i>
+                </img>
+                <div class="ltds">Sooraj Dooba Hain</div>
+                <div class="ltda">ROY</div>
+              </div>
+              <div class="latest-trends-box">
+                <img src="./Images/pehli dafa.jpg" id="lt8">
+                <i class="fa-solid fa-plus plus" id="Pehli Dafa"></i>
+                </img>
+                <div class="ltds">Pehli Dafa</div>
+                <div class="ltda">Tamma Tamma Again</div>
+              </div>
+            </div>
+
+            <!-- Popular Songs -->
+
+            <div class="popular-trends">Popular Songs</div>
+            <div class="popular-trends-posters">
+              <div class="popular-trends-box">
+                <img src="./Images/khairiyat.jpg" id="pt1">
+                <i class="fa-solid fa-plus plus" id="Khairiyat"></i>
+                </img>
+                <div class="ptds">Khairiyat</div>
+                <div class="ptda">Chhichhore</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Jugnu.jpg" id="pt2">
+                <i class="fa-solid fa-plus plus" id="Jugnu"></i>
+                </img>
+                <div class="ptds">Jugnu</div>
+                <div class="ptda">Badshah</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Aaj Dil Shayaraana.jpg" id="pt3">
+                <i class="fa-solid fa-plus plus" id="Aaj dil Shayaraana"></i>
+                </img>
+                <div class="ptds">Aaj dil Shayaraana</div>
+                <div class="ptda">Airlift</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Dil Cheez Tujhe Dedi.jpg" id="pt4">
+                <i class="fa-solid fa-plus plus" id="Dil Cheez Tujhe"></i>
+                </img>
+                <div class="ptds">Dil Cheez Tujhe</div>
+                <div class="ptda">Airlift</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Soch Na Sake.jpg" id="pt5">
+                <i class="fa-solid fa-plus plus" id="Soch Na Sake"></i>
+                </img>
+                <div class="ptds">Soch Na Sake</div>
+                <div class="ptda">Airlift</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Blame The Night.jpg" id="pt6">
+                <i class="fa-solid fa-plus plus" id="Blame The Night"></i>
+                </img>
+                <div class="ptds">Blame The Night</div>
+                <div class="ptda">Holiday</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Theher Ja.jpg" id="pt7">
+                <i class="fa-solid fa-plus plus" id="Theher Ja"></i>
+                </img>
+                <div class="ptds">Theher Ja</div>
+                <div class="ptda">October</div>
+              </div>
+              <div class="popular-trends-box">
+                <img src="./Images/Tuhi Toh Hai.jpg" id="pt8">
+                <i class="fa-solid fa-plus plus" id="Tu Hi Toh Hai"></i>
+                </img>
+                <div class="ptds">Tu Hi Toh Hai</div>
+                <div class="ptda">Holiday</div>
+              </div>
+            </div>
+          </div>
+          <div class="song-cards" data-user-cards-container></div>
+          <template data-user-template>
+            <div class="card1">
+              <img src="" alt="" class="imgcard" data-image>
+              <div class="header1" id="header1" data-header ></div>
+              <div class="body1" data-body></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+      <div class="bottom">
+        <div class="songInfo">
+          <div id="currentsongInfoName"><div class="beforeimg"><img src="" class="currentsongimg" id="currentsongimg" ></div><div class="beforename"><marquee scrollamount="2" class="currentsongname"></marquee></div></div>
+        </div>
+        <div class="icons">
+          <i class="fas fa-backward-step" id="previous_track"></i>
+          <i class="far fa-circle-play" id="mainPlay"></i>
+          <i class="fas fa-forward-step" id="next_track"></i>
+        </div>
+        <div class="progresswtime">
+          <div id="currentduration">0:00</div>
+          <input type="range" name="points" id="myprogressbar" value="0" min="0" max="1000">
+          <div id="totalduration">0:00</div>
+        </div>
+        <div class="volumecase">
+          <i class="fa-solid fa-volume-high volicon"></i>
+          <input type="range" name="points" class="volinput" id="volume" value="50" min="0" max="100">
+          <div class="volupdate">50%</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="/JSON/songs.json"></script>
+    <script src="/Javascript/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
